@@ -117,6 +117,12 @@
                 border-radius: 6px;
                 background-color:  #F6F7FB;
             }
+            .item3{
+                width: 180px;
+                height: 20px;
+                border-radius: 6px;
+                background-color:  #F6F7FB;
+            }
             .bottom{
                 display: flex;
                 width: 360px;
@@ -139,6 +145,86 @@
                 border-radius: 6px;
                 background-color: #F6F7FB;
             }
+            .tips-box1{
+                width: 52px;
+                height: 24px;
+                display: flex;
+                gap: 4px;
+                position: absolute;
+                right: 20px;
+            }
+            .right1{
+                width: 24px;
+                height: 24px;
+                border-radius: 6px;
+                background-color: #F6F7FB;
+            }
+            .right2{
+                width: 24px;
+                height: 24px;
+                border-radius: 6px;
+                background-color: #F6F7FB;
+            }
+            .bar1{
+                width: 360px;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 1px solid #EBECF1;
+            }
+            .barr{
+                display: grid;
+                width: 360px;
+                height: 44px;
+            }
+            .bar-a{
+                width: 360px;
+                height: 10px;
+                border-radius: 6px;
+                background-color: #F6F7FB;
+            }
+            .bar-b{
+                width: 160px;
+                height: 24px;
+                border-radius: 6px;
+                background-color: #F6F7FB;
+            }
+            .list-box{
+                width: 360px;
+                height: 276px;
+                border-bottom: 1px solid#EBECF1;
+            }
+            .list-box1{
+                display: flex;
+                width: 360px;
+                height: 84px;
+                border-bottom: 1px solid#EBECF1;
+                align-items: center;
+            }
+            .list1{
+                display: grid;
+                width: 310px;
+                height: 60px;
+                border-bottom: 1px solid#EBECF1;
+                gap: 5px;
+                list-style: none;
+            }
+            .list-right{
+                width: 40px;
+                height: 40px;
+                border-radius: 12px;
+                background-color: #F6F7FB;
+                position: absolute;
+                right: 20px;
+                
+            }
+            .item4{
+                width: 310px;
+                height: 16px;
+                border-radius: 6px;
+                background-color: #F6F7FB;
+            }
     </style>
 </head>
 <body>
@@ -151,9 +237,7 @@
                         <div class="dashboard-box-header">
                             <div class="tips-box">
                                 <div class="header-box-left"></div>
-                                <div class="tips-box">
-                                    <div class="header-box-right1"></div>
-                                </div>
+                                <div class="header-box-right"></div>
                             </div>
                         </div>
                         <div class="bar"></div>
@@ -164,12 +248,12 @@
                                 <li class="item2"></li>
                             </div>
                             <div class="list">
-                                <li class="item1"></li>
+                                <li class="item3"></li>
                                 <li class="item2"></li>
                                 <li class="item2"></li>
                             </div>
                             <div class="list">
-                                <li class="item1"></li>
+                                <li class="item3"></li>
                                 <li class="item2"></li>
                                 <li class="item2"></li>
                             </div>
@@ -188,9 +272,9 @@
                     <div class="dashboard-box-front">
                         <div class="dashboard-box-header">
                             <div class="header-box-left"></div>
-                            <div class="header-box-right"></div>
-                            <div class="tips-box">
-                                <span></span>
+                            <div class="tips-box1">
+                                <div class="right1"></div>
+                                <div class="right2"></div>
                             </div>
                         </div>
                         <div class="bar"></div>
@@ -201,7 +285,7 @@
                                 <li class="item2"></li>
                             </div>
                             <div class="list">
-                                <li class="item1"></li>
+                                <li class="item3"></li>
                                 <li class="item2"></li>
                                 <li class="item2"></li>
                             </div>
@@ -220,7 +304,59 @@
             </div>
         </div>
         <div class="dashboard-card">
-            <div class="dashboard-box"></div>
+            <div class="dashboard-box">
+                <div class="dashboard-box-inner">
+                    <div class="dashboard-box-front">
+                        <div class="dashboard-box-header">
+                            <div class="tips-box">
+                                <div class="header-box-left"></div>
+                                    <div class="tips-box1">
+                                        <div class="right1"></div>
+                                        <div class="right2"></div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="bar1">
+                            <div class="barr">
+                                <div class="bar-a"></div>
+                                <div class="bar-b"></div>
+                            </div>
+                        </div>
+                        <div class="dashboard-box-content">
+                            <div class="list-box">
+                                <div class="list-box1">
+                                <div class="list1">
+                                <li class="item1"></li>
+                                <li class="item4"></li>
+                                <li class="item4"></li>
+                            </div>
+                            <div class="list-right"></div>
+                        </div>
+                        <div class="list-box1">
+                            <div class="list1">
+                            <li class="item1"></li>
+                            <li class="item4"></li>
+                            <li class="item4"></li>
+                        </div>
+                        <div class="list-right"></div>
+                    </div>
+                    <div class="list-box1">
+                        <div class="list1">
+                        <li class="item1"></li>
+                        <li class="item4"></li>
+                        <li class="item4"></li>
+                    </div>
+                    <div class="list-right"></div>
+                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="bottom-box-left"></div>
+                            <div class="bottom-box-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="dashboard-card">
             <div class="dashboard-box"></div>
