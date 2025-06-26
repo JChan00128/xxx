@@ -15,7 +15,7 @@
             }
             .dashboard-card{
                 width: 400px;
-                height: 452px; 
+                height: 450px; 
                 display: block;
                 unicode-bidi: isolate;
                 background-color: skyblue;
@@ -25,7 +25,6 @@
                 height: 450px;
                 overflow: hidden;
                 perspective: 1500px;
-                transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
                 border-radius: 12px;
             }
             .dashboard-box-inner{
@@ -36,48 +35,109 @@
                 display: flex;
                 border-radius: 1px solid#e1e2e6;
             }
-            .dashboard-box-font{
-                display: flex;
-                width: 100%;
+            .dashboard-box-front{ 
+                width: 360px;
                 height: 100%;
+                padding: 0 20px;
                 unicode-bidi: isolate;
             }
             .dashboard-box-header{
                 display: flex;
-                width: 396px;
-                height: 54px;
-                align-items: center;
+                width: 320px;
+                height: 24px;
                 padding: 15px 20px;
-                border-top: 1px solid #ebecf1;
-                font-size: 14px;
-                line-height: 24px;
-                justify-content: space-between;
+                justify-content: flex-start;
+            }
+            .header-box-left{
+                width: 200px;
+                height: 24px;
+                margin-left: -20px;
+                border-radius: 6px;
+                background-color: #F6F7FB;
+            }
+            /* .header-box-left1{
+                width: 200px;
+                height: 24px;
+                margin-left: -20px;
+                border-radius: 6px;
+                background-color: #F6F7FB;
+            } */
+            .header-box-right{
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                right: 20px;
+                border-radius: 6px;
+                background-color: #F6F7FB;
+            }
+            .header-box-right1{
+                width: 52px;
+                height: 24px;
+                position: absolute;
+                right: 20px;
+                border-radius: 6px;
+                background-color: #F6F7FB;
             }
             .tips-box{
+                
                 display: flex;
                 gap: 5px;
             }
+            .bar{
+                width: 320px;
+                height: 70px;
+                padding: 0 20px;
+                border-radius: 12px;
+                background-color: #F6F7FB;
+            }
             .dashboard-box-content{
-                flex:1;
-                overflow-y: auto;
-                overflow-x: hidden;
-                height: calc(100% - 48px - 48px);
-                width: 100%;
-                background-color: blue;
+                width: 360px;
+                height: 252px;
+                border-bottom: 1px solid  #EBECF1;
             }
             .list{
-                display: block;
-                margin: 0;
-                padding: 0;
+                display: grid;
+                width: 100%;
+                height: 60px;
+                padding: 12px 0px;
+                border-bottom: 1px solid#EBECF1;
+                gap: 5px;
                 list-style: none;
-                width: 100%;
-                height: calc(100% - 20px);
             }
-            .item{
-                display: list-item;
-                width: 100%;
-                width: calc(100% -40px);
-                padding: 0,20px;
+            .item1{
+                width: 120px;
+                height: 20px;
+                border-radius: 6px;
+                background-color:  #F6F7FB;
+            }
+            .item2{
+                width: 360px;
+                height: 8px;
+                padding: 4px 0px;
+                border-radius: 6px;
+                background-color:  #F6F7FB;
+            }
+            .bottom{
+                display: flex;
+                width: 360px;
+                height: 50px;
+                align-items: center;
+                border-top: 1px solid#EBECF1;
+                margin-top: 23px;
+            }
+            .bottom-box-left{
+                width: 120px;
+                height: 24px;
+                border-radius: 6px;
+                background-color: #F6F7FB;
+            }
+            .bottom-box-right{
+                position: absolute;
+                right: 20px;
+                width: 24px;
+                height: 24px;
+                border-radius: 6px;
+                background-color: #F6F7FB;
             }
     </style>
 </head>
@@ -87,27 +147,77 @@
         <div class="dashboard-card">
             <div class="dashboard-box">
                 <div class="dashboard-box-inner">
-                    <div class="dashboard-box-font">
+                    <div class="dashboard-box-front">
                         <div class="dashboard-box-header">
-                            <h2></h2>
                             <div class="tips-box">
-                                <span></span>
+                                <div class="header-box-left"></div>
+                                <div class="tips-box">
+                                    <div class="header-box-right1"></div>
+                                </div>
                             </div>
                         </div>
+                        <div class="bar"></div>
                         <div class="dashboard-box-content">
                             <div class="list">
-                                <li class="item"></li>
-                                <li class="item"></li>
-                                <li class="item"></li>
-                                <li class="item"></li>
+                                <li class="item1"></li>
+                                <li class="item2"></li>
+                                <li class="item2"></li>
+                            </div>
+                            <div class="list">
+                                <li class="item1"></li>
+                                <li class="item2"></li>
+                                <li class="item2"></li>
+                            </div>
+                            <div class="list">
+                                <li class="item1"></li>
+                                <li class="item2"></li>
+                                <li class="item2"></li>
                             </div>
                         </div>
+                        <div class="bottom">
+                <div class="bottom-box-left"></div>
+                <div class="bottom-box-right"></div>
+            </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="dashboard-card">
-            <div class="dashboard-box"></div>
+            <div class="dashboard-box">
+                <div class="dashboard-box-inner">
+                    <div class="dashboard-box-front">
+                        <div class="dashboard-box-header">
+                            <div class="header-box-left"></div>
+                            <div class="header-box-right"></div>
+                            <div class="tips-box">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar"></div>
+                        <div class="dashboard-box-content">
+                            <div class="list">
+                                <li class="item1"></li>
+                                <li class="item2"></li>
+                                <li class="item2"></li>
+                            </div>
+                            <div class="list">
+                                <li class="item1"></li>
+                                <li class="item2"></li>
+                                <li class="item2"></li>
+                            </div>
+                            <div class="list">
+                                <li class="item1"></li>
+                                <li class="item2"></li>
+                                <li class="item2"></li>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                <div class="bottom-box-left"></div>
+                <div class="bottom-box-right"></div>
+            </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="dashboard-card">
             <div class="dashboard-box"></div>
